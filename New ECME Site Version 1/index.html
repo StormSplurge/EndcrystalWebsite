@@ -1,142 +1,151 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endcrystal.me - 1.19 Minecraft Anarchy</title>
 	<link rel="icon" type="image/png" href="assets/endcrystal.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="bgzy.css">
+	<link rel="stylesheet" href="background.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/d4d256d9eb.js" crossorigin="anonymous"></script>
-	
+	<script src="https://kit.fontawesome.com/d4d256d9eb.js" crossorigin="anonymous"></script>	
 </head>
-
 <body>
-
 	</br>
 	</br>
-	</br>
-	
-    <div class="container">
-        
+	</br>	
+		<div class="container">
 			<header>
-				<img src="assets/endcrystal.png" alt="endcrystal.me">
+				<img src="assets/endcrystal-anim.gif" alt="endcrystal.me">
 				<h1>ENDCRYSTAL.ME</h1>
-				<p>1.19 Minecraft Anarchy</p>
+				1.19 Minecraft Anarchy</br>
+				<text id="server__info"></text>
 			</header>
-		
-		</br>
-		
+			</br>	
         <main>
-            
 			<section id="about">
-			IP: <a class="clip-exec" href="#" onClick="copyToClipboard();">endcrystal.me <i class="fa fa-clipboard"></i> <span class="clip-stat"></span></a><br/>
+			IP: <a id="server__ip">endcrystal.me</a><i class="fa fa-clipboard" id="clipboard"></i><br/>
             Java: <span class="highlighted">1.12</span> to <span class="highlighted">1.19</span><br/>
 			Bedrock: <span class="highlighted">1.17</span> to <span class="highlighted">1.19</span><br/>
-			</section>
-            
+			</section>          
 			<section id="links">
-			<div style="margin: auto;">
-                <div style="margin: 0 auto; display:flex;">
-                    <div style="flex-grow: 1;">
-                        <a href="https://discord.gg/AUskmthYQA" target="_blank" rel="noopener">
-                            <i class="fab fa-discord icon"></i><br/>
-							<br/>
-                            <span>Discord</span>
-                        </a>
-                    </div>
-
-                    <div style="flex-grow: 1;">
-                        <a href="https://www.reddit.com/r/endcrystalme/" target="_blank" rel="noopener">
-                            <i class="fab fa-reddit icon"></i><br/>
-							<br/>
-                            <span>Reddit</span>
-                        </a>
-                    </div>
-
-                    <div style="flex-grow: 1;">
-                        <a href="mailto:admin@endcrystal.me" target="_blank" rel="noopener">
-                            <i class="fas fa-at icon"></i><br/>
-							<br/>
-                            <span>E-mail</span>
-                        </a>
-                    </div>
-                </div>
+				<div style="margin: auto;">
+					<div style="margin: 0 auto; display:flex;">
+						<div style="flex-grow: 1;">
+							<a href="https://discord.gg/AUskmthYQA" target="_blank" rel="noopener">
+								<i class="fab fa-discord icon"></i><br/>
+								<br/>
+								<span>Discord</span>
+							</a>
+						</div>
+						<div style="flex-grow: 1;">
+							<a href="https://www.reddit.com/r/endcrystalme/" target="_blank" rel="noopener">
+								<i class="fab fa-reddit icon"></i><br/>
+								<br/>
+								<span>Reddit</span>
+							</a>
+						</div>
+						<div style="flex-grow: 1;">
+							<a href="mailto:admin@endcrystal.me" target="_blank" rel="noopener">
+								<i class="fas fa-at icon"></i><br/>
+								<br/>
+								<span>E-mail</span>
+							</a>
+						</div>
+					</div>
             </section>
+			<section id="rules">
+				<h2>Endcrystal.me Rules</h2>
+				1. Don't post or do anything illegal in-game or in our Discord/Reddit</br>
+				2. Don't publish anyone's personal information (Doxxing)</br>
+				3. Don't intentionally lag the server</br>
+				</br>
+				Other than that, anything goes!
+			</section>
+			<section id="clients">
+				<h2>Utility Mods for Endcrystal.me</h2>
+				<p>Popular client options for both versions of Minecraft - We DO NOT guarantee either Meteor or Horion are 100% safe to run, but they're both popular with users of the server and have Github repos, so you can check the code for yourself. We also suggest you use MultiMC and create a new instance of Minecraft for any Java Edition clients.</p>
 			
+				<div style="margin: auto;">
+					<div style="margin: 0 auto; display:flex;">
+						<div style="flex-grow: 1;">
+							<a href="https://meteorclient.com/" target="_blank" rel="noopener">
+								<span>Java Edition</span></br>
+								</br>
+								<i class="fa-solid fa-meteor icon"></i><br/>
+								<br/>
+								<span>Meteor Client</span>
+							</a>
+						</div>
+						<div style="flex-grow: 1;">
+							<a href="https://horion.download/" target="_blank" rel="noopener">
+								<span>Bedrock Edition</span></br>
+								</br>
+								<i class="fa-solid fa-sun icon"></i>
+								<br/>
+								<br/>
+								<span>Horion Client</span>
+							</a>
+						</div>
+					</div>
+            </section>		
             <section id="vote">
                 <h2>Vote for Endcrystal.me</h2>
 				<p>You can vote once per site per day - voting won't get you any rewards in-game, but it will help new players find the server!<p/>
 				<div style="margin: auto;">
-                <div style="margin: 0 auto; display:flex;">
-                    <div style="flex-grow: 1;">
-                        <a href="https://www.planetminecraft.com/server/endcrystal-me/vote/" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-check-to-slot icon"></i><br/>
-							<br/>
+					<div style="margin: 0 auto; display:flex;">
+						<div style="flex-grow: 1;">
+							<a href="https://www.planetminecraft.com/server/endcrystal-me/vote/" target="_blank" rel="noopener">
+								<i class="fa-solid fa-check-to-slot icon"></i><br/>
+								<br/>
                             <span>Site 1</span>
-                        </a>
-                    </div>
-
-                    <div style="flex-grow: 1;">
-                        <a href="https://minecraft-mp.com/server/261209/vote/" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-check-to-slot icon"></i><br/>
-							<br/>
+							</a>
+						</div>
+						<div style="flex-grow: 1;">
+							<a href="https://minecraft-mp.com/server/261209/vote/" target="_blank" rel="noopener">
+								<i class="fa-solid fa-check-to-slot icon"></i><br/>
+								<br/>
                             <span>Site 2</span>
-                        </a>
-                    </div>
-
-                    <div style="flex-grow: 1;">
-                        <a href="https://minecraft-server-list.com/server/463042/vote/" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-check-to-slot icon"></i><br/>
-							<br/>
+							</a>
+						</div>
+						<div style="flex-grow: 1;">
+							<a href="https://minecraft-server-list.com/server/463042/vote/" target="_blank" rel="noopener">
+								<i class="fa-solid fa-check-to-slot icon"></i><br/>
+								<br/>
                             <span>Site 3</span>
-                        </a>
-                    </div>
+							</a>
+						</div>
 					
-					                    <div style="flex-grow: 1;">
-                        <a href="https://topminecraftservers.org/vote/12692" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-check-to-slot icon"></i><br/>
-							<br/>
+					    <div style="flex-grow: 1;">
+							<a href="https://topminecraftservers.org/vote/12692" target="_blank" rel="noopener">
+								<i class="fa-solid fa-check-to-slot icon"></i><br/>
+								<br/>
                             <span>Site 4</span>
-                        </a>
-                    </div>
+							</a>
+						</div>
 					
-					                    <div style="flex-grow: 1;">
-                        <a href="https://minecraftservers.org/vote/588366" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-check-to-slot icon"></i><br/>
-							<br/>
+					    <div style="flex-grow: 1;">
+							<a href="https://minecraftservers.org/vote/588366" target="_blank" rel="noopener">
+								<i class="fa-solid fa-check-to-slot icon"></i><br/>
+								<br/>
                             <span>Site 5</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-			
-			<section id="gallery-controls">
-			
-			<p>Background Slideshow Controls</p>
-			
+							</a>
+						</div>
+					</div>
+            </section>								
+			<p>Background Slideshow Controls</p>		
 				<nav>
 					<ul>
 						<li><a id="prev" href="#"><i class="fa-solid fa-backward"></i></a></li>
 						<li><a id="play" href="#"><i class="fa-solid fa-play"></i></a></li>
 						<li><a id="next" href="#"><i class="fa-solid fa-forward"></i></a></li>
 					</ul>
-				</nav>
-			
-			</section>
-				
-            </section>
-				
+				</nav>		
+            </section>			
         </main>
-    
-	</div>
-	
-<script src="bgzy.js"></script>	
-<script>
-		// Initialize bgzy.
+	</div>	
+	<script src="background.js"></script>	
+	<script>
 		bgzy.init([
 			["bgimg/bg1.png", "zoomFadeOut"],
 			["bgimg/bg2.png", "zoomFadeOut"],
@@ -179,12 +188,10 @@
 			bgzy.play();
 		});
 	</script>
-	
-	<script>
-            let copyToClipboard = function(e) {
-                navigator.clipboard.writeText("endcrystal.me");
-            };
-    </script>
-	
+    <span class="server-status" id="server__status">Please wait</span>
+	<script src="serverstatus.js"></script>
+	</br>
+	</br>
+	</br>
 </body>
 </html>
